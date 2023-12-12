@@ -5,3 +5,5 @@ count = 0
 for i in range(fr):
     count= number1+number2
     print(count)
+    number1 = count
+    number2 = count
