@@ -4,5 +4,3 @@ m = int(input("请输入终止幂指数:"))
 for i in range (n,m+1):
     print (pow(number,i))
     i = i+1
-    if i == m+1:
-        print("结束")
