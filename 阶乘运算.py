@@ -1,7 +1,7 @@
-n = int(input("请输入运算的数字:"))
+n = int(input("请输入运算的数字:"));m = 1
 if n > 1:
     for i in range(n):
-        i*=(i+1)
+        m*=(i+1)
+    print(f'结果:{m}')
 else:
-    i = 1
-print(f'结果:{i}')
+    print(f'结果:{m}')
