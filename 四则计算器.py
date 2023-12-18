@@ -24,7 +24,7 @@ for i in range(5): #打印欢迎界面
     elif i == 1 or i == 3:
         print(f'                           ')
     else:
-        print(f'欢 迎 使 用 四 则 混 合 运 算')
+        print(f'欢 迎 使 用 四 则 计 算 器')
         continue
 x = int(input("请输入运算的数字:")) #输入x变量的值
 y = int(input("请输入运算的数字:")) #输入y变量的值
