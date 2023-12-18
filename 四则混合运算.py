@@ -28,8 +28,20 @@ for i in range(5): #打印欢迎界面
         continue
 x = int(input("请输入运算的数字:")) #输入x变量的值
 y = int(input("请输入运算的数字:")) #输入y变量的值
-n = input("请输入选项:")
-a = addition() #定义选项a
-s = subtraction() #定义选项s
-m = multiplication() #定义选项m
-d = division() #定义选项d
+print(f'1.加法  2.减法  3.乘法  4.除法  5.退出') #打印选项
+n = int(input("请输入选项:")) #输入选项
+while True:
+    if n == 1:
+        a = addition() #定义选项a
+    elif n == 2:
+        s = subtraction() #定义选项s
+    elif n == 3:
+        m = multiplication() #定义选项m
+    elif n == 4:
+        d = division() #定义选项d
+    elif n == 5:
+        print(f'期 待 下 次 与 你 相 见 !')
+        break
+    else:
+        print(f'非法操作,不予执行')
+        continue
