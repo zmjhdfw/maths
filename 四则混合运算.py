@@ -29,8 +29,8 @@ for i in range(5): #打印欢迎界面
 x = int(input("请输入运算的数字:")) #输入x变量的值
 y = int(input("请输入运算的数字:")) #输入y变量的值
 print(f'1.加法  2.减法  3.乘法  4.除法  5.退出') #打印选项
-for i in range(5): #控制输入次数
-    if i == 4:
+for i in range(6): #控制输入次数
+    if i == 5:
         print(f'抱 歉 已 达 输 入 上 限 , 请 明 日 再 来 .')
         break
     else:
