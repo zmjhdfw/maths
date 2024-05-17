@@ -1,4 +1,4 @@
-def test():
+'''def test():
     a = int(input(f'please give a number:'))
     c = int(input(f'please give a number:'))
     if a < 0:
@@ -11,4 +11,4 @@ def test():
         return a
     else: 
         print(f'非法输入')
-print(f'answer is {test()}')
+print(f'answer is {test()}')'''

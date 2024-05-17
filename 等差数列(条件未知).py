@@ -17,7 +17,7 @@ try: #try-except语句控制异常报错
                         x1,x2 = -b/(2*a)
                         d = 0
                         print(f'公差为{d}')
-                    if q > 0:
+                    elif q > 0:
                         x1 = -b+math.sqrt(q)/(2*a)
                         x2 = -b-math.sqrt(q)/(2*a)
                         print(f'1.公差为负\n2.公差为正')
@@ -31,7 +31,7 @@ try: #try-except语句控制异常报错
                         else:
                             print(f'不存在，终止程序')
                             break
-                    if q < 0:
+                    elif q < 0:
                         print(f'不存在,终止程序')
                         break
                 elif n2 == 2:
@@ -49,48 +49,45 @@ try: #try-except语句控制异常报错
                     print(f'不存在，终止程序')
                     break
             elif n1 == 2:
-                print(f'')
-                d = int(input("请输入公差:")) #用户输入公差
-                n = int(input("请给出已知项:")) #用户输入已知项
-                y = int(input("请给出对应的值:")) #用户输入对应的值
-                for i in range(1): #进行一次for循环
-                    x = y - (n-1)*d #求出首项
-                print(f'首项为{x}') #打印出首项
-                print(f'是否继续') #给出选择
-                m = input("请选择:") #用户输入选择
-                if m == '是' or m == 'yes': #判断用户的选择，为'是'或'yes'
-                    n = int(input("请输入要求的项")) #用户输入要求的项
-                    for i in range(1): #进行一次循环
-                        y = x + (n-1)*d #求出对应的值
-                    print(f'结果为{y}') #打印出对应的值
-                elif m == '否' or m == 'no': #判断用户的选择，为'否'或'no'
-                    break #结束程序
-                else: #其他情况
-                    break #结束程序
-            elif n == 2: #选项2的情况
-                x = int(input("请输入首项:")) #用户输入首项
-                n = int(input("请给出已知项:")) #用户输入已知项
-                y = int(input("请给出对应的值:")) #用户输入对应的值
-                for i in range(1): #进行一次for循环
-                    d = (y-x) / (n-1) #求出公差
-                print(f'公差为{d}') #打印公差
-                print(f'是否继续') #给出选择
-                m = input("请选择:") #用户输入选择
-                if m == '是' or m == 'yes': #判断用户的选择，为'是'或'yes'
-                    n = int(input("请输入要求的项:")) #用户输入要求的项
-                    for i in range(1): #进行一次循环
-                        y = x + (n-1)*d #求出对应的值
-                    print(f'结果为{y}') #打印出对应的值
-                elif m == '否' or m == 'no': #判断用户的选择，为'否'或'no'
-                    break #结束程序
-                else: #其他情况
-                    break #结束程序
-            elif n == 3: #选项3的情况
-                print(f'期 待 下 次 与 你 相 见') #打印结束语
-            else: #其他情况
-                print(f'非 法 操 作 , 不 予 执 行') #打印警告语
+                print(f'1.由上题已求得公差,又已知其中一项的项数\n2.由上题已求得公差,又已知前n项和的项数\n3.退出')
+                n2 =  int(input(f'请输入选项:'))
+                if n2 == 1:
+                    if q == 0:
+                        x = x1 = x2
+                        p = '{x} + (n-1)*{d}'
+                        print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                    elif q > 0:
+                        n3 = int(input(f'x1的项:'))
+                        if d > 0:
+                            x = x1 - ((n3 - 1)*d)
+                            p = '{x} + (n-1)*{d}'
+                            print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                        elif d < 0:
+                            x = x1 - ((n3 - 1)*d)
+                            p = '{x} + (n-1)*{d}'
+                            print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                        else:
+                            print(f'不存在，终止程序')
+                    else:
+                        print(f'不存在，终止程序')
+                elif n2 == 2:
+                    n4 = int(input(f'请输入前n项的项数:'))
+                    x = (2*s1)/n4-q1
+                    p = '{x} + (n-1)*{d}'
+                    print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                elif n2 == 3:
+                    print(f'感谢使用，拜拜')
+                    break
+                else:
+                    print(f'不存在，终止程序')
+                    break
+            elif n1 == 3:
+                print(f'感谢使用，拜拜')
+                break
+            else:
+                print(f'不存在，终止程序')
+                break
+    asu = Arithmetic_sequence_unknown()
+    asu()
 except ValueError: #代码报错输出的情况
     print(f'空着给我填，想得美，哼！') #打印一段话，可自定义
-x = x1
-p = x + (n-1)*d
-print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
