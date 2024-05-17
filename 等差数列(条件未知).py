@@ -9,10 +9,10 @@ try: #try-except语句控制异常报错
                 print(f'1.已知x1,x2为等差数列的两项且是一元二次函数的两个实数解\n2.已知前n-1项的和,前n项的和与前n+1的和\n3.退出')
                 n2 = int(input(f'请输入选项:'))
                 if  n2 == 1:
-                    a = int(input(f'请输入a的值:'))
-                    b = int(input(f'请输入b的值:'))
-                    c = int(input(f'请输入c的值:'))
-                    q = b**2-2(a*c)
+                    A = int(input(f'请输入a的值:'))
+                    B = int(input(f'请输入b的值:'))
+                    C = int(input(f'请输入c的值:'))
+                    Q = B**2-2(A*C)
                     if q == 0:
                         x1,x2 = -b/(2*a)
                         d = 0
