@@ -23,10 +23,10 @@ try: #try-except语句控制异常报错
                             x2 = -b-math.sqrt(q)/(2*a)
                             print(f'1.公差为负\n2.公差为正')
                             c1 = int(input(f'请输入选项:'))
-                            if c1 == 1:
+                            if c1 == 1: #选项1的情况
                                 d = x2 - x1
                                 print(f'公差为{round(d)}')
-                            elif c1 == 2:
+                            elif c1 == 2: #选项2的情况
                                 d = x1 - x2
                                 print(f'公差为{round(d)}')
                             else:
@@ -35,7 +35,7 @@ try: #try-except语句控制异常报错
                         elif q < 0:
                             print(f'不存在,终止程序')
                             break
-                    elif n2 == 2:
+                    elif n2 == 2: #选项2的情况
                         s1 =int(input(f'请输入前n项的和:'))
                         s2 =int(input(f'请输入前n-1项的和:'))
                         s3 =int(input(f'请输入前n+1项的和:'))
@@ -43,16 +43,16 @@ try: #try-except语句控制异常报错
                         q2 = s3-s1
                         d = q2-q1
                         print(f'a(n)项的值为{q1},a(n+1)项的值为{q2},公差为{d}')
-                    elif n2 == 3:
+                    elif n2 == 3: #选项3的情况
                         print(f'感谢使用，拜拜')
                         break
                     else:
                         print(f'不存在，终止程序')
                         break
-                elif n1 == 2:
+                elif n1 == 2: #选项2的情况
                     print(f'1.由上题已求得公差,又已知其中一项的项数\n2.由上题已求得公差,又已知前n项和的项数\n3.退出')
                     n2 =  int(input(f'请输入选项:'))
-                    if n2 == 1:
+                    if n2 == 1: #选项1的情况
                         if q == 0:
                             x = x1 = x2
                             p = '{x} + (n-1)*{d}'
@@ -71,24 +71,24 @@ try: #try-except语句控制异常报错
                                 print(f'不存在，终止程序')
                         else:
                             print(f'不存在，终止程序')
-                    elif n2 == 2:
+                    elif n2 == 2: #选项2的情况
                         n4 = int(input(f'请输入前n项的项数:'))
                         x = (2*s1)/n4-q1
                         p = '{x} + (n-1)*{d}'
                         print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
-                    elif n2 == 3:
+                    elif n2 == 3: #选项3的情况
                         print(f'感谢使用，拜拜')
                         break
                     else:
                         print(f'不存在，终止程序')
                         break
-                elif n1 == 3:
+                elif n1 == 3: #选项3的情况
                     print(f'感谢使用，拜拜')
                     break
                 else:
                     print(f'不存在，终止程序')
                     break
-            elif i == 3:
+            elif i == 3: #第四次循环的情况
                 print(f'感谢使用，拜拜')
                 break
             else:
