@@ -55,18 +55,18 @@ try: #try-except语句控制异常报错
                     if n2 == 1: #选项1的情况
                         if q == 0:
                             x = x1 = x2
-                            p = '{x} + (n-1)*{d}'
-                            print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                            p = f'{round(x)} + (n-1)*{round(d)}'
+                            print(f'等差数列首项:{round(x)},公差:{round(d)},通项公式:{p}')
                         elif q > 0:
                             n3 = int(input(f'x1的项:'))
                             if d > 0:
                                 x = x1 - ((n3 - 1)*d)
-                                p = '{x} + (n-1)*{d}'
-                                print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                                p = f'{round(x)} + (n-1)*{round(d)}'
+                                print(f'等差数列首项:{round(x)},公差:{round(d)},通项公式:{p}')
                             elif d < 0:
                                 x = x1 - ((n3 - 1)*d)
-                                p = '{x} + (n-1)*{d}'
-                                print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                                p = f'{round(x)} + (n-1)*{round(d)}'
+                                print(f'等差数列首项:{round(x)},公差:{round(d)},通项公式:{p}')
                             else:
                                 print(f'不存在，终止程序')
                         else:
@@ -74,8 +74,8 @@ try: #try-except语句控制异常报错
                     elif n2 == 2: #选项2的情况
                         n4 = int(input(f'请输入前n项的项数:'))
                         x = (2*s1)/n4-q1
-                        p = '{x} + (n-1)*{d}'
-                        print(f'等差数列首项:{x},公差:{d},通项公式:{p}')
+                        p = f'{round(x)} + (n-1)*{round(d)}'
+                        print(f'等差数列首项:{round(x)},公差:{round(d)},通项公式:{p}')
                     elif n2 == 3: #选项3的情况
                         print(f'感谢使用，拜拜')
                         break
