@@ -2,14 +2,14 @@
 import math
 try: #try-except语句控制异常报错
     def Arithmetic_sequence_unknown(): #自定义函数
-        for i in range(4):
-            if i != 3: #进行一次for循环
+        for i in range(4): #进行4次循环
+            if i != 3: # 判断是否为第四次循环
                 print(f'1.求解公差 2.求解首项 3.退出') #打印选项
                 n1 = int(input(f'请输入选项:')) #用户输入选项
                 if n1  == 1: #选项1的情况
-                    print(f'1.已知x1,x2为等差数列的两项且是一元二次函数的两个实数解\n2.已知前n-1项的和,前n项的和与前n+1的和\n3.退出')
-                    n2 = int(input(f'请输入选项:'))
-                    if  n2 == 1:
+                    print(f'1.已知x1,x2为等差数列的两项且是一元二次函数的两个实数解\n2.已知前n-1项的和,前n项的和与前n+1的和\n3.退出') #打印选项
+                    n2 = int(input(f'请输入选项:')) #用户输入选项
+                    if  n2 == 1: #选项1的情况
                         a = int(input(f'请输入a的值:'))
                         b = int(input(f'请输入b的值:'))
                         c = int(input(f'请输入c的值:'))
