@@ -1,5 +1,5 @@
 #本代码实际应用于等差数列首项，公差都未知的情况下
-import math
+import math  #导入数学库
 try: #try-except语句控制异常报错
     def Arithmetic_sequence_unknown(): #自定义函数
         for i in range(4): #进行4次循环
