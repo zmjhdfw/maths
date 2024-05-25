@@ -94,6 +94,6 @@ try: #try-except语句控制异常报错
             else:
                 print(f'不存在，终止程序')
                 break
-    asu = Arithmetic_sequence_unknown()
+    asu = Arithmetic_sequence_unknown() #主函数
 except ValueError: #代码报错输出的情况
     print(f'空着给我填，想得美，哼！') #打印一段话，可自定义
