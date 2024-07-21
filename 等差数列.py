@@ -14,7 +14,7 @@ if x==0 and d==0:
     y = x
     print(f'这是首项为0,公差为0的常数数列,所以结果为{y}')
 elif x!=0 and d==0:
-    y = xs
+    y = x
     print(f'这是首项不为0,但公差为0的常数数列,所以结果为{y}')
 elif x==0 and d!=0:
     y = (n-1)*d
