@@ -14,7 +14,7 @@
 print(f'answer is {test()}')'''
 a = float(input(f'please give a number:'))
 b = float(input(f'please give a number:'))
-c = float(0)
+c = float
 if a > b:
     c = a
 else:
