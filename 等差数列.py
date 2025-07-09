@@ -1,10 +1,10 @@
-x = int(input("请输入等差数列首项:"))
+x = float(input("请输入等差数列首项:"))
 try:
-    d = int(input("请输入等差数列公差:"))
+    d = float(input("请输入等差数列公差:"))
 except ValueError:
     print(f'抱歉无法获取公差')
     try:
-        d = int(input("请重新输入："))
+        d = float(input("请重新输入："))
     except ValueError:
         for i in range(1):
             print(f'因为没有公差，所以无法计算，抱歉哈')
