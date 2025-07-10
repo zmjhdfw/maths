@@ -19,6 +19,6 @@ try: #try-except语句控制异常报错
                 y=x
                 print(f'这是首项为{x},公比为{q}的常数数列，结果是{y}')
         else: #如果n为0的情况
-            print(f'项数为0无法计算,抱歉哈')
+            print(f'项数为0无法计算')
 except ValueError: #代码报错输出的情况
     print(f'违法输入')
