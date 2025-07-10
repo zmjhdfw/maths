@@ -21,4 +21,4 @@ try: #try-except语句控制异常报错
         else: #如果n为0的情况
             print(f'项数为0无法计算,抱歉哈')
 except ValueError: #代码报错输出的情况
-    print(f'公比为空值无法计算,抱歉哈')
+    print(f'违法输入')
