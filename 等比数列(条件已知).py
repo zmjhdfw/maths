@@ -10,10 +10,10 @@ try: #try-except语句控制异常报错
             if x==0 or q==0: #定义第一种情况
                 print(f'非法操作')
             elif x!=1 and q!=1: #定义第二种情况
-                y=x*q^(n-1)
+                y=x*pow(q,n-1)
                 print(f'这是首项为{x},公比为{q}的等比数列，结果是{y}')
             elif x==1: #定义第三种情况
-                y=q^(n-1)
+                y=pow(q,n-1)
                 print(f'这是首项为{x},公比为{q}的常数数列，结果是{y}')
             elif q==1: #定义第四种情况
                 y=x
