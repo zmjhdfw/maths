@@ -1,5 +1,4 @@
-num=1
-if num>2:
-    print('1')
-else:
-    print('2')
+from pathlib import Path
+path=Path()
+contents=path.read_text()
+print(contents)
