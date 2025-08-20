@@ -18,8 +18,6 @@ def create_child_windows():
 
 master = tk.Tk()
 master.title("主窗口")
-
 btn_create_child = tk.Button(master,text="创建子窗口",command=create_child_windows)
 btn_create_child.pack()
-
 master.mainloop()
